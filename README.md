@@ -29,6 +29,11 @@ It is understandable that the maintainer wants to get something in return for
 the script. But in the end he was only just that - a maintainer - and the
 script was created mostly by other people. Naively these other people just
 donated their "IP" to the script without clear license.
+
+These days, almost all searches for WSUS problems or maintenance will result
+in references to the script. But the script itself has been removed.
+And, obnoxiously, the maintainer of the script replies to any WSUS problem with
+an advertisement for the paid script.
 ```
 
 ## TODO
