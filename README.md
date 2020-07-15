@@ -1,7 +1,7 @@
 # Start-WSUSCleanup
 WSUS periodic maintenance script.
 
-WSUS requires periodic maintenance. If maintenance is not done, the database tables grow too large and WSUS will stop working with various errors.
+WSUS requires periodic maintenance. If the maintenance is not done, the database tables grow too large and WSUS will stop working with various errors.
 Cleaning the database becames difficult if the database is left without maintenance.
 
 This script does the following steps:
@@ -38,5 +38,6 @@ an advertisement for the paid script.
 
 ## TODO
 * Add switches to check/create additional indexes in SUSDB to make large/unmaintained WSUS not unbelievably slow.
+* Rebuild fragmented indices.
 * Add switch for test mode/WhatIf.
 * Delete old history entries.
