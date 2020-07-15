@@ -1,8 +1,8 @@
 # Start-WSUSCleanup
 WSUS periodic maintenance script.
 
-WSUS requires periodic maintenance. If the maintenance is not done, the database tables grow too large and WSUS will stop working with various errors.
-Cleaning the database becames difficult if the database is left without maintenance.
+WSUS requires periodic maintenance. If the maintenance is not done, database tables grow too large and WSUS will stop working with various errors.
+Cleaning the database becames difficult if the database is left without maintenance for too long.
 
 This script does the following steps:
 * Decline expired updates (executing stored procedure `spDeclineExpiredUpdates`).
@@ -16,7 +16,7 @@ A million such scripts exist already. The purpose of this script is to pick the 
 
 Story time!
 ```
-There was once a good WSUS maintenance script. Many people, including Microsoft
+Once there was a good WSUS maintenance script. Many people, including Microsoft
 employees with insider information about how WSUS works and detailed knowledge
 of the SUSDB database, helped to improve the script. Over a long period of time
 the script became the ultimate WSUS maintenance script. Then the maintainer of
@@ -37,7 +37,7 @@ an advertisement for the paid script.
 ```
 
 ## TODO
-* Add switches to check/create additional indexes in SUSDB to make large/unmaintained WSUS not unbelievably slow.
+* Add switches to check/create additional indices in SUSDB to speed up unworkably slow large/unmaintained WSUS.
 * Rebuild fragmented indices.
 * Add switch for test mode/WhatIf.
 * Delete old history entries.
